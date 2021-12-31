@@ -21,8 +21,13 @@ _global_script_class_icons={
 [application]
 
 config/name="Nezuko Rescues"
-run/main_scene="res://main_game.tscn"
+run/main_scene="res://main_menu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+PlayerVariables="*res://player_variables.gd"
+Global="*res://global.gd"
 
 [gdnative]
 

@@ -1,0 +1,621 @@
+# Blender MTL File: 'None'
+# Material Count: 53
+
+newmtl Eyebrows
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+
+newmtl Eyelids
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+
+newmtl Eyelids.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\Face.png
+
+newmtl Eyes
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr2401_eye_C1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr2401_eye_C1.png
+
+newmtl Hair
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr0330_hair_C2.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr0330_hair_C2.png
+
+newmtl Material.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr0330_hair_C2.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\T_Chr0330_hair_C2.png
+
+newmtl Material.002
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\coat.png
+
+newmtl Material.003
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.990000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\coat.png
+
+newmtl Material.004
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.990000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+
+newmtl Material.005
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.999000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\coat.png
+
+newmtl Material.006
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+
+newmtl Material.007
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+
+newmtl bamboo.bamboo
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\c_aw_yayoi_kimono_diout.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\c_aw_yayoi_kimono_diout.png
+
+newmtl en
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\faceishidaAa1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\faceishidaAa1.png
+
+newmtl en.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\faceishidaAa1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\faceishidaAa1.png
+
+newmtl en.002
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\fac (2).png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\fac (2).png
+
+newmtl en.003
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.004
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.005
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.006
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.000000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.007
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.000000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.008
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.000000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.009
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.000000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl en.010
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\face_MikuAp.png
+
+newmtl hem
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+
+newmtl kimono
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\c_aw_yayoi_kimono_diout2.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\c_aw_yayoi_kimono_diout2.png
+
+newmtl kimono.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.002
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.003
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.004
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.005
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.006
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.007
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.008
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.009
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.010
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.011
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\pink.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\pink.png
+
+newmtl kimono.012
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\kimono.jpg
+
+newmtl kimono.013
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\pink.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\pink.png
+
+newmtl lic
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+
+newmtl nogi
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+
+newmtl nogti
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku2.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku2.png
+
+newmtl obi
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\red and whie.jpg
+
+newmtl obiage
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\green 1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\green 1.png
+
+newmtl obijime
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+
+newmtl obijime.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+
+newmtl obijime.002
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\orange 1.png
+
+newmtl verh
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\body00_Miku.png
+
+newmtl white
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\red and whie.jpg
+
+newmtl white.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.000000
+illum 9
+map_Kd C:\\Users\\Pedro\\Downloads\\tx_body.png
+
+newmtl white.002
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\MariaKain_Cloth_DIFF.png
+
+newmtl zori_himo
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\RIBBON.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\RIBBON.png
+
+newmtl zori_soko
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\sandals.png
+map_d C:\\Users\\Pedro\\Downloads\\Nezuko Kamado\\PMX\\sandals.png

@@ -1,0 +1,119 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://gui images/question_box.png" type="Texture" id=1]
+[ext_resource path="res://gui images/wp8988115.jpg" type="Texture" id=2]
+[ext_resource path="res://main_menu.gd" type="Script" id=3]
+[ext_resource path="res://fonts/raleway_medium_18.tres" type="DynamicFontData" id=4]
+[ext_resource path="res://gui images/buttons/button_tech_hover.png" type="Texture" id=5]
+[ext_resource path="res://gui images/buttons/button_tech.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = -0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.0500488
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+margin_left = 362.0
+margin_top = 200.0
+margin_right = 662.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 300, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/TextureRect"]
+anchor_bottom = 1.0
+margin_left = 47.0
+margin_top = 2.0
+margin_right = 247.0
+margin_bottom = 2.0
+custom_constants/separation = 20
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chapter1Button" type="TextureButton" parent="CenterContainer/TextureRect/VBoxContainer"]
+margin_top = 40.0
+margin_right = 200.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 0, 50 )
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/TextureRect/VBoxContainer/Chapter1Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.8, 0.929412, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Chơi phần 1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Chapter2Button" type="TextureButton" parent="CenterContainer/TextureRect/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0.670588 )
+margin_top = 110.0
+margin_right = 200.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 200, 50 )
+size_flags_horizontal = 0
+disabled = true
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/TextureRect/VBoxContainer/Chapter2Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.8, 0.929412, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Chơi phần 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Chapter1Button" to="." method="_on_Chapter1Button_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Chapter2Button" to="." method="_on_Chapter2Button_pressed"]
