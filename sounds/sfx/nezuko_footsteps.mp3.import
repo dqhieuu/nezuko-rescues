@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nezuko_footsteps.mp3-fdd3633de9acab2caa1f146932821c3a.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_footsteps.mp3"
+dest_files=[ "res://.import/nezuko_footsteps.mp3-fdd3633de9acab2caa1f146932821c3a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

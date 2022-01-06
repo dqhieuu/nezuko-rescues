@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nezuko_angry_fixed.wav-8d42c8f15d477c86cc9b7dbeae4d3e19.sample"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_angry_fixed.wav"
+dest_files=[ "res://.import/nezuko_angry_fixed.wav-8d42c8f15d477c86cc9b7dbeae4d3e19.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/answer_correct.mp3-c4bdb8bac3a7b55573e621b3e873a342.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/answer_correct.mp3"
+dest_files=[ "res://.import/answer_correct.mp3-c4bdb8bac3a7b55573e621b3e873a342.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

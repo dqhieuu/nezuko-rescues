@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nezuko_angry.mp3-26ad65612138a1aa3034a718333a0e32.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_angry.mp3"
+dest_files=[ "res://.import/nezuko_angry.mp3-26ad65612138a1aa3034a718333a0e32.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

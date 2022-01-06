@@ -1,8 +1,6 @@
 extends Control
 
-signal my_signal
 signal quit_game
-
 
 
 func _on_ResumeButton_pressed():

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nezuko_suprise.mp3-e18de0dcac2db0a46635a6ce0f8036f8.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_suprise.mp3"
+dest_files=[ "res://.import/nezuko_suprise.mp3-e18de0dcac2db0a46635a6ce0f8036f8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

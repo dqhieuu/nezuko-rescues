@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nezuko_kick.mp3-82f1e5f949f190d63532c77cc6dfa1ca.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_kick.mp3"
+dest_files=[ "res://.import/nezuko_kick.mp3-82f1e5f949f190d63532c77cc6dfa1ca.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -20,9 +20,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Nezuko Rescues"
+config/name="Nezuko treasure hunt"
 run/main_scene="res://main_menu.tscn"
-config/icon="res://icon.png"
+config/icon="res://nezuko_icon.png"
+
+[audio]
+
+default_bus_layout=""
 
 [autoload]
 

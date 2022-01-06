@@ -1,5 +1,7 @@
 extends Control
 
+signal answer_signal(type)
+
 const root_level_path = "res://level_data"
 
 const TOTAL_QUESTIONS = 10
@@ -42,33 +44,59 @@ func set_question_textures():
 	set_answer_count()
 
 func go_to_next_question():
-	current_question_idx = current_question_idx+1
+	current_question_idx += 1
 	if current_question_idx < TOTAL_QUESTIONS:
+
 		set_question_textures()
 	else:
-		var prev_high_score = PlayerVariables.high_scores_by_chapter[chapter-1]
-		var high_score = max(prev_high_score, correctly_chosen_answers)
-		PlayerVariables.high_scores_by_chapter[chapter-1] = high_score
-		if(chapter != 2):
-			if prev_high_score < Global.CHAPTER_UNLOCK_THRESHOLD and high_score >= Global.CHAPTER_UNLOCK_THRESHOLD:
-				$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/RewardInfo/Unlocked.show()
-			elif high_score < Global.CHAPTER_UNLOCK_THRESHOLD:
-				$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/RewardInfo/TryHarder.show()
-		$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CurrentScore/Score.set_text(String(correctly_chosen_answers))
-		$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CurrentScore/TotalQuestions.set_text(String(TOTAL_QUESTIONS))
-		$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/HighestScore/Score.set_text(String(high_score))
-		var play_time =  int(get_parent().elapsed_time)
-		$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CompleteTime/Time\
-			.set_text("%d phút %d giây" % [play_time/60, play_time%60] if play_time>= 60 else "%d giây" % (play_time%60))
-		$ResultOverlay.show()
+		set_result_box()
+
+
+func set_visual_score():
+	$VisualScore/HBoxContainer/Score.set_text("%d" % (correctly_chosen_answers * 100))
+
+func set_result_box():
+	var prev_high_score = PlayerVariables.high_scores_by_chapter[chapter-1]
+	var high_score = max(prev_high_score, correctly_chosen_answers)
+	PlayerVariables.high_scores_by_chapter[chapter-1] = high_score
+
+	if correctly_chosen_answers >= Global.CHAPTER_UNLOCK_THRESHOLD:
+		if prev_high_score < Global.CHAPTER_UNLOCK_THRESHOLD and chapter < 2:
+			$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/RewardInfo/Unlocked.show()
+	else:
+		$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/RewardInfo/TryHarder.show()
+
+	$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CurrentScore/Score.set_text(String(correctly_chosen_answers))
+	$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CurrentScore/TotalQuestions.set_text(String(TOTAL_QUESTIONS))
+	$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/HighestScore/Score.set_text(String(high_score))
+	var play_time =  int(get_parent().elapsed_time)
+	$ResultOverlay/CenterContainer/TextureRect/VBoxContainer/CompleteTime/Time\
+		.set_text("%d phút %d giây" % [play_time/60, play_time%60] if play_time>= 60 else "%d giây" % (play_time%60))
 
 func set_answer_count():
+	$QuestionBox/QuestionNumber.set_text("Câu %d:" % (current_question_idx + 1))
 	$QuestionBox/Score.set_text("%d/%d" % [correctly_chosen_answers, TOTAL_QUESTIONS])
 
-func _on_Answer_pressed(idx):
-	if question_set[current_question_idx]["dap_an"] == idx:
-		correctly_chosen_answers = correctly_chosen_answers + 1
+func get_end_signal():
+	return "_" + ("win" if correctly_chosen_answers >= Global.CHAPTER_UNLOCK_THRESHOLD else "lose")
+	
 
+func _on_Answer_pressed(idx):
+	$DisableClick.show()
+	var signal_string = ""
+	if question_set[current_question_idx]["dap_an"] == idx:
+		correctly_chosen_answers += 1
+		signal_string += "correct"
+	else:
+		signal_string += "incorrect"
+			
+	if current_question_idx+1 >= TOTAL_QUESTIONS:
+		signal_string += get_end_signal()
+	
+	emit_signal("answer_signal", signal_string)
+	
+	$AnimationPlayer.play("HideUI")
+	yield(get_tree().create_timer(0.5), "timeout")
 	go_to_next_question()
 	
 func _init():
@@ -77,12 +105,14 @@ func _init():
 
 
 func _ready():
+	set_visual_score()
+
 	for i in range(4):
 		var answer_square_instance = answer_square.instance()
 		answer_square_instance.connect("pressed", self, "_on_Answer_pressed", [i])
 		$Grid4x1.add_child(answer_square_instance)
 		answer_buttons_square.append(answer_square_instance)
-		
+
 		var answer_long_instance = answer_long.instance()
 		answer_long_instance.connect("pressed", self, "_on_Answer_pressed", [i])
 		$Grid2x2.add_child(answer_long_instance)
@@ -96,3 +126,15 @@ func _on_PauseButton_pressed():
 
 func _on_GoHomeButton_pressed():
 	get_parent().to_main_menu()
+
+func _on_3DScene_current_animation_finished():
+	$DisableClick.hide()
+	
+	if current_question_idx < TOTAL_QUESTIONS:
+		$AnimationPlayer.play_backwards("HideUI")
+	else:
+		$ResultOverlay.show()
+
+
+func _on_3DScene_obstacle_finished():
+	set_visual_score()

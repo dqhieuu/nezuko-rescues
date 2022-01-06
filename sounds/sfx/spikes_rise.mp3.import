@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spikes_rise.mp3-381fbec80f76d27fa9ecdad9b5e00c20.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/spikes_rise.mp3"
+dest_files=[ "res://.import/spikes_rise.mp3-381fbec80f76d27fa9ecdad9b5e00c20.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nezuko_hit.mp3-1adab1c68d7d53ea48ddf27ad677d98b.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/nezuko_hit.mp3"
+dest_files=[ "res://.import/nezuko_hit.mp3-1adab1c68d7d53ea48ddf27ad677d98b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,15 +1,45 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://gui images/question_box.png" type="Texture" id=1]
-[ext_resource path="res://gui images/wp8988115.jpg" type="Texture" id=2]
+[ext_resource path="res://gui_images/question_box.png" type="Texture" id=1]
+[ext_resource path="res://gui_images/nezuko_bg.png" type="Texture" id=2]
 [ext_resource path="res://main_menu.gd" type="Script" id=3]
-[ext_resource path="res://fonts/raleway_medium_18.tres" type="DynamicFontData" id=4]
-[ext_resource path="res://gui images/buttons/button_tech_hover.png" type="Texture" id=5]
-[ext_resource path="res://gui images/buttons/button_tech.png" type="Texture" id=6]
+[ext_resource path="res://fonts/raleway_medium_18_old.tres" type="DynamicFont" id=4]
+[ext_resource path="res://gui_images/buttons/button_tech_hover.png" type="Texture" id=5]
+[ext_resource path="res://gui_images/buttons/button_tech.png" type="Texture" id=6]
+[ext_resource path="res://NezukoBgRunning.tscn" type="PackedScene" id=7]
+[ext_resource path="res://sounds/bgm/main_menu.mp3" type="AudioStream" id=8]
+[ext_resource path="res://gui_images/buttons/button_tech_simple.png" type="Texture" id=9]
+[ext_resource path="res://gui_images/buttons/button_tech_simple_hover.png" type="Texture" id=10]
+[ext_resource path="res://fonts/raleway_medium_18_new.tres" type="DynamicFont" id=11]
+[ext_resource path="res://gui_images/pause_menu.png" type="Texture" id=12]
+[ext_resource path="res://fonts/raleway_medium_22.tres" type="DynamicFont" id=13]
+[ext_resource path="res://gui/reward_item.tscn" type="PackedScene" id=14]
+[ext_resource path="res://gui_images/cg/cg2.jpg" type="Texture" id=15]
+[ext_resource path="res://gui_images/cg/cg1.jpg" type="Texture" id=16]
 
-[sub_resource type="DynamicFont" id=1]
-size = 18
-font_data = ExtResource( 4 )
+[sub_resource type="Animation" id=2]
+resource_name = "NezukoRunsSideways"
+length = 3.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("NezukoSprite:margin_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -250, -0.25, 0, 0.25, 0, 300, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 3 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("NezukoSprite:anchor_left")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 3 )
+}
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -20,17 +50,34 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = -0.1
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 2 )
 expand = true
-stretch_mode = 7
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="NezukoSprite" type="MarginContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 300.0
+margin_top = -150.0
+margin_right = -1274.0
+margin_bottom = -150.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" parent="NezukoSprite" instance=ExtResource( 7 )]
+position = Vector2( 0, 0 )
+frame = 3
+flip_h = true
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_top = 0.2
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 0.0500488
@@ -42,10 +89,10 @@ __meta__ = {
 
 [node name="TextureRect" type="TextureRect" parent="CenterContainer"]
 margin_left = 362.0
-margin_top = 200.0
+margin_top = 115.0
 margin_right = 662.0
-margin_bottom = 400.0
-rect_min_size = Vector2( 300, 200 )
+margin_bottom = 365.0
+rect_min_size = Vector2( 300, 250 )
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {
@@ -65,9 +112,9 @@ __meta__ = {
 }
 
 [node name="Chapter1Button" type="TextureButton" parent="CenterContainer/TextureRect/VBoxContainer"]
-margin_top = 40.0
+margin_top = 35.0
 margin_right = 200.0
-margin_bottom = 90.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 0, 50 )
 texture_normal = ExtResource( 6 )
 texture_hover = ExtResource( 5 )
@@ -80,19 +127,19 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 0.8, 0.929412, 1, 1 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 4 )
 text = "Chơi phần 1"
 align = 1
 valign = 1
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="Chapter2Button" type="TextureButton" parent="CenterContainer/TextureRect/VBoxContainer"]
 modulate = Color( 1, 1, 1, 0.670588 )
-margin_top = 110.0
+margin_top = 105.0
 margin_right = 200.0
-margin_bottom = 160.0
+margin_bottom = 155.0
 rect_min_size = Vector2( 200, 50 )
 size_flags_horizontal = 0
 disabled = true
@@ -107,7 +154,7 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 0.8, 0.929412, 1, 1 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 4 )
 text = "Chơi phần 2"
 align = 1
 valign = 1
@@ -115,5 +162,162 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/TextureRect/VBoxContainer"]
+margin_top = 175.0
+margin_right = 200.0
+margin_bottom = 215.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RewardsButton" type="TextureButton" parent="CenterContainer/TextureRect/VBoxContainer/HBoxContainer"]
+margin_left = 25.0
+margin_right = 175.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 150, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/TextureRect/VBoxContainer/HBoxContainer/RewardsButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.8, 0.929412, 1, 1 )
+custom_fonts/font = ExtResource( 11 )
+text = "Phần thưởng"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/NezukoRunsSideways = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -7.038
+autoplay = true
+
+[node name="RewardScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+
+[node name="ColorRect" type="ColorRect" parent="RewardScreen"]
+modulate = Color( 0, 0, 0, 0.682353 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseRewardScreenButton" type="TextureButton" parent="RewardScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer2" type="CenterContainer" parent="RewardScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="RewardScreen/CenterContainer2"]
+margin_left = 387.0
+margin_top = 200.0
+margin_right = 637.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 250, 200 )
+mouse_filter = 0
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="RewardScreen/CenterContainer2/TextureRect"]
+margin_left = 62.0
+margin_top = 18.0
+margin_right = 193.0
+margin_bottom = 45.0
+custom_colors/font_color = Color( 0.454902, 0.443137, 0.266667, 1 )
+custom_fonts/font = ExtResource( 13 )
+text = "Phần thưởng"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="RewardScreen/CenterContainer2/TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 79.0
+margin_right = -21.0
+margin_bottom = -21.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RewardScreen/CenterContainer2/TextureRect/MarginContainer"]
+margin_right = 209.0
+margin_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_constants/separation = 20
+alignment = 1
+
+[node name="RewardItem1" parent="RewardScreen/CenterContainer2/TextureRect/MarginContainer/HBoxContainer" groups=["RewardItems"] instance=ExtResource( 14 )]
+margin_left = 14.0
+margin_right = 94.0
+margin_bottom = 100.0
+image = ExtResource( 16 )
+locked = true
+
+[node name="RewardItem2" parent="RewardScreen/CenterContainer2/TextureRect/MarginContainer/HBoxContainer" groups=["RewardItems"] instance=ExtResource( 14 )]
+margin_left = 114.0
+margin_right = 194.0
+margin_bottom = 100.0
+image = ExtResource( 15 )
+locked = true
+
+[node name="RewardDisplay" type="TextureRect" parent="RewardScreen" groups=["RewardDisplay"]]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+texture = ExtResource( 16 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseRewardDisplayButton" type="TextureButton" parent="RewardScreen/RewardDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Chapter1Button" to="." method="_on_Chapter1Button_pressed"]
 [connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/Chapter2Button" to="." method="_on_Chapter2Button_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureRect/VBoxContainer/HBoxContainer/RewardsButton" to="." method="_on_RewardsButton_pressed"]
+[connection signal="pressed" from="RewardScreen/CloseRewardScreenButton" to="." method="_on_CloseRewardScreenButton_pressed"]
+[connection signal="pressed" from="RewardScreen/RewardDisplay/CloseRewardDisplayButton" to="." method="_on_CloseRewardDisplayButton_pressed"]
