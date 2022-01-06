@@ -43,7 +43,7 @@ Trò chơi trắc nghiệm giải đố dành cho các bạn 7-8 tuổi, với m
   - Trích xuất âm thanh của nhân vật chính (Nezuko) từ trong phim
 
 - **Nguyễn Quang Đại Dương**
-  - Thiết kế giao diện GUI: ảnh nền, font, các nút, các panel. Làm bằng Photoshop và góp nhặt từ nhiều nguồn
+  - Thiết kế giao diện 2D: ảnh nền, font, các nút, các panel. Làm bằng Photoshop và góp nhặt từ nhiều nguồn
   - Tìm kiếm, trích xuất file hiệu ứng âm thanh môi trường từ nhiều nguồn
 
 Tất cả các thành viên trong nhóm đều đã thử làm game với Godot và có thể code, tạo scene trên này. Tuy nhiên do khối lượng công việc nhiều và có những phần công việc gối nhau cho nên phần code bọn em chỉ phân công cho 2 người làm. 
