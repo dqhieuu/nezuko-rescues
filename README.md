@@ -50,3 +50,7 @@ Tất cả các thành viên trong nhóm đều đã thử làm game với Godot
 
 Phần gõ lại đáp án và vẽ lại hình cũng là một công việc tốn thời gian không kém so với bên code hay bên làm model.
 ## Video demo & hình ảnh
+
+
+https://user-images.githubusercontent.com/63568218/148563088-21b0e345-b016-4a13-bb42-4b2ba2c2c0dd.mp4
+
